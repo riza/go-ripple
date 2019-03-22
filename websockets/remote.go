@@ -314,6 +314,24 @@ func (r *Remote) Ledger(ledger interface{}, transactions bool) (*LedgerResult, e
 	return cmd.Result, nil
 }
 
+// Get last closed ledger detail
+func (r *Remote) LastClosedLedger() (*LedgerResult, error) {
+
+	cmd := &LedgerCommand{
+		Command: newCommand("ledger_closed"),
+	}
+
+	r.outgoing <- cmd
+	<-cmd.Ready
+
+	if cmd.CommandError != nil {
+		return nil, cmd.CommandError
+	}
+
+	return cmd.Result, nil
+
+}
+
 func (r *Remote) LedgerHeader(ledger interface{}) (*LedgerHeaderResult, error) {
 	cmd := &LedgerHeaderCommand{
 		Command: newCommand("ledger_header"),
