@@ -13,7 +13,7 @@ import (
 
 	"github.com/golang/glog"
 	"github.com/gorilla/websocket"
-	"github.com/rubblelabs/ripple/data"
+	"github.com/riza/go-ripple/data"
 )
 
 const (

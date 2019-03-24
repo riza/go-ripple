@@ -14,7 +14,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/rubblelabs/ripple/crypto"
+	"github.com/riza/go-ripple/crypto"
 )
 
 var (

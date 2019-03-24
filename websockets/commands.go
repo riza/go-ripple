@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/rubblelabs/ripple/data"
+	"github.com/riza/go-ripple/data"
 )
 
 var counter uint64
@@ -149,8 +149,8 @@ type LedgerCommand struct {
 
 type LedgerResult struct {
 	Ledger    data.Ledger `json:"ledger"`
-	LastHash  string `json:"ledger_hash"`
-	LastIndex uint   `json:"ledger_index"`
+	LastHash  string      `json:"ledger_hash"`
+	LastIndex uint        `json:"ledger_index"`
 }
 
 type LedgerHeaderCommand struct {

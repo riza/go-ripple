@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	. "github.com/rubblelabs/ripple/testing"
+	. "github.com/riza/go-ripple/testing"
 	. "gopkg.in/check.v1"
 )
 

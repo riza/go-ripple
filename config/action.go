@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/rubblelabs/ripple/data"
-	"github.com/rubblelabs/ripple/websockets"
+	"github.com/riza/go-ripple/data"
+	"github.com/riza/go-ripple/websockets"
 )
 
 type Action struct {
