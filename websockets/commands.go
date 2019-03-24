@@ -148,7 +148,7 @@ type LedgerCommand struct {
 }
 
 type LedgerResult struct {
-	Ledger data.Ledger
+	Ledger    data.Ledger `json:"ledger"`
 	LastHash  string `json:"ledger_hash"`
 	LastIndex uint   `json:"ledger_index"`
 }
