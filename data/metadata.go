@@ -53,6 +53,7 @@ func (s TransactionSlice) Sort() { sort.Sort(s) }
 
 type TransactionWithMetaData struct {
 	Transaction
+	Amount         *Amount    `json:"amount,omitempty"`
 	DestinationTag uint32     `json:"DestinationTag"`
 	MetaData       MetaData   `json:"meta"`
 	Date           RippleTime `json:"date"`
