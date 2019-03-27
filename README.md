@@ -3,4 +3,4 @@ ripple
 
 Go packages to interact with the Ripple protocol.
 
-Forked from: https://github.com/riza/ripple
+Forked from: https://github.com/rubblelabs/ripple
