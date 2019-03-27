@@ -55,6 +55,7 @@ type TransactionWithMetaData struct {
 	Transaction
 	Amount         *Amount    `json:"amount,omitempty"`
 	DestinationTag uint32     `json:"DestinationTag"`
+	Destination    string     `json:"Destination"`
 	MetaData       MetaData   `json:"meta"`
 	Date           RippleTime `json:"date"`
 	LedgerSequence uint32     `json:"ledger_index"`
